@@ -1,0 +1,288 @@
+Slayt 1
+Merhaba arkadaşlar 
+
+Slayt 2 
+
+Merhaba Ben Onur Bilgiç , Data İstanbul'un 2016 yılında kuruluşundan beri bu organizasyonun içinde bulunmaktayım.
+Bugün sizlere Sadık arkadşımız ile Regresyon'u anlatacağız. 
+Şunu sormak istiyorum kaç kişi türev ve matris  biliyor? 
+
+S-3
+
+Önce en basitinden tek değişkenli regresyon ile başlıyoruz. İlk olarak model gösterimine bakacağız. 
+
+S-4
+
+Ev fiyatları ile ev metrekaresi arasında bir ilişki arıyoruz. Resimde binlerce ev ile dağılımı görüyoruz. 
+Bunu tek bir çizgi çizerek ne kadar anlatabiliriz ? 
+
+S-5 
+
+Biz bugün devamlı verilerin tahmini ile ilgileneceğiz. 
+
+
+S-6 
+
+X bizim algoritmaya vereceğimiz girdi değişkenleri. 
+Y bilmek istediğimiz değerler
+m kaç adet x,y örneği olduğu
+Theta katsayı  x ile carpacağımız katsayılar
+h : bu carpım sonucu olusan tahmin 
+x,y birlikte eğitim verisi 
+xi yi sadece bir örnek , ya da satır .
+
+S-7 
+
+Örnek ile görecek olursak 
+x ve y nin ilk değerleri
+
+x değerleri 8450,9600, . .
+
+y değerleri  208500...
+
+m sayısı 1460 adet 
+
+theta ve h'ı biz bulacağız. 
+
+S-8 
+
+Kabaca yapacaklarımız : 
+
+Eğitim veri seti yani x,y ile öğrenme algoritması geliştireceğiz. 
+Sonrasında bu bize tahmin modelini verecek 
+bu modeli kullanarak x lerden h'ları yani tahminler bulacağız. 
+
+S-9 	
+
+Hipotez yani x ten y yi tahmin eden modelimiz. 
+theta0 ile theta1 çarpı x ile buluyoruz. 
+
+S-10
+
+Buna Tek değişkenli doğrusal regresyon diyoruz. 
+
+1,2,3 X değerlerim bunlar direkt geliyor değiştiremem fakat  theta0 0  theta1 0.5 
+ile tahmin yapabilirim .
+
+x ekseni girdi , y ekseni ise tahmindir. 
+
+S-11 
+
+Şimdiki konumuz bedel. Bu tahminlerin bize bir bedeli var. 
+
+S-12
+
+Verilerimizi hatırlayalım. Hipotezi de belirledik. Dedikki biz bu formul 
+ile tahmin yaparız. 
+
+Peki theta sayılarını nasıl sececeğiz ??? 
+
+S-13 
+
+Hadi deneyelim 
+
+theta0 = 1.5  , theta1=0 yani bildiğimiz sabit fonksiyon
+
+S-14
+
+Durum 2 
+
+theta0 = 0 ve theta=0.5 için 
+
+S-15 
+
+Durum 3
+
+Katsayıların değişimi ile tahmin değişiyor. 
+
+S-16
+
+Önemli olan çıktıyı yani y yi en iyi anlatan tahmini yani h yi bulmak. Bu da 
+katsayıları en iyi şekilde bularak olur. 
+
+S-17
+hipotezi ve katsayıları biliyoruz. 
+Şimdi gelelim bedele . 
+Tahmin ile gerçek arasındaki fark bizim için bedeldir. 
+eksilerin artıları götürmemesi için karesi alınır. 
+optimizasyon ile düşük katsayılar bulunur. 
+
+S-18
+
+Mesela bedelin katsayılar ile değişimine bir örnek . Katsayılar doğru seçilirse 
+bedel buradaki gibi 0 olur.
+
+S-19 
+
+Fakat buradaki gibi tahmin yani soldaki grafikteki çizgi ile çıktı yani yeşil noktalar 
+farklı ise bedel artar. Burada 0.5 olmuş mesela.
+
+S-20
+
+Şimdi bir kaç slayt üst üste farklı katsayılar ile tahminlerde bulunacağız ve en sonunda 
+bedel değişimine grafik ile bakacağız. 
+theta0 hep 0 sadece theta1 değişecektir.
+	
+Mesela burada y yukarı giderken tahmin tersine gitmiş. 
+
+S-21
+
+Burada biraz yaklaşmış. 
+
+S-22
+
+Burada da yaklaşıp geçmiş.
+
+
+S-23
+
+Burada daha da  geçmiş.
+
+S-24	
+
+Bedel değişimi de theta1 değişimi -0.5 2.5 arasında 
+bu grafikteki gibi olmuştur. 
+En düşük nokta theta1 =1 iken olmuştur. 
+
+S-25
+
+Gelin aynı konu üzerine biraz daha gerçekçi veriler ile bakalım.
+Formullerimiz aynı . 
+
+İlk çizdirdiğimiz grafiği biz çizdirsek 
+theta 0 =5000 ve theta1 e 12 vererek gayet makul bir çizim yapabiliriz 
+
+S-26 
+
+Bu grafiğin bedeli de 1446 adet veri için 293.... 
+
+S-27 
+
+Theta0 theta1 ve bedel için değişimi çizdirirsek 
+bu şekilde bir kase şekli çıkacaktır. Dibi en istediğimiz noktadır. 
+
+S-28 
+
+Gelin üç değer için bir görsel cizdirelim. Theta0 5000 ve  theta1 12 iken 
+
+Sağda bir kontor grafiği görüyorsunuz. orta noktası kürenin en dibidir. 
+
+En orta da olabilecek en iyi değer yanında da bizim tahminimiz var. 
+
+S-29 
+
+Şimdi dereceli azaltmaya bakalım . Gradient descent olarak da bilebilirsiniz.
+
+bir theta0 ve theta1 ile başlayacağız ve düşürürerek sonuna kadar ilerleyeceğiz. 
+
+S-30
+
+Gelin buna bir resimde bakalım
+
+theta0 ve 1 i değiştirerek en alçak noktaya gidiyoruz. 
+
+Lokal minumumlara dikkat edeceğiz. 
+
+S31
+
+Bunu yapmak için de katsayıların bedele göre türevini alıyoruz. 
+bu türev ile minumum noktayı buluyoruz. 
+
+S32
+
+katsayıları aynı anda güncelliyoruz. 
+
+S33 
+
+Öğrenme hızımız a ile değişir. 
+
+S34 
+
+Evet türev bilenleri şimdi görelim .
+
+Soru bir türev nerede pozitiftir ?  
+
+A diyenler el kaldırsın
+
+B diyenler el kaldırsın B doğru cevap :)
+
+S35 
+
+öğrenme hızı küçük ise işlem çok uzun sürer. 
+
+S36
+
+a değeri büyük olursa atlama ve bulamama ihtimalimiz vardır. 
+
+S37
+
+a değerini doğru seçmez isek lokal optimuma yakalanabiliriz. 
+
+s38
+
+Öğrenme hızını değiştirmeye gerek yoktur. Çünkü  türevin sıfır olduğu noktaya 
+giderken türevin kendisi hep küçülecektir.
+
+s39
+
+Doğrusal regresyon için bakarsak 
+
+formulumz burada olduğu gibi .  dip noktaya gelene kadar devam edeceğiz. 
+
+s40
+theta0 ve ve 1 için bakarsak 
+fonksiyonun türevi : içinin türevi çarpı kendisiydi . sonuç olarak theta ile x
+i çarptığımız için x dışarı çıkar.  theta0 ın x değerleri herzaman 1 dir. 
+
+s41 
+
+sonuç olarak 
+
+theta0 ve theta1 kendini bulana kadar devam edeceğiz. 
+
+S42 - S43 
+
+bu resimlerde gördüğümüz gibi 
+
+S44
+
+Kasenin dibi 
+
+S45 
+
+Şimdi bunu bizde çizdirerek görelim 
+
+sağdan theta0 ve theta1 için değer seçerek ilerleyelim 
+
+S46
+
+Bu değerleri durmadan güncelliyoruz.
+
+S47 
+
+Adım adım ilerliyoruz. 
+
+S48
+
+Ve orta noktaya gidiyoruz. 
+
+s51 
+
+Bu algoritmaya yıgın algoritması da denilir çünkü bir kerede bütün eğitim seti için
+katsayı bulunur.
+
+Şimdi bunu çok değişkenli yapmak için matris konusunun üzerinden geçmemiz gerekiyor. 
+
+Sadık arkadaşımız bize bu konuda yardımcı olacaktır. 
+
+
+
+
+
+
+
+
+
+
+
+
