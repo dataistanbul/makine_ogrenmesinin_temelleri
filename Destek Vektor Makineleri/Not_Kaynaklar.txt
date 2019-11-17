@@ -1,0 +1,29 @@
+﻿Kaynaklar:
+    
+    * Coursera Machine Learning dersleri, SVM (7 hafta)
+    
+    * http://web.cs.iastate.edu/~honavar/smo-svm.pdf
+
+    * https://pythonprogramming.net/support-vector-machine-intro-machine-learning-tutorial/
+
+    * https://www.youtube.com/watch?v=EvMF9wvOdao&feature=youtu.be
+
+    * http://cagriemreakin.com/veri-bilimi/support-vector-machine-svm-8.html
+
+    * https://link.springer.com/referenceworkentry/10.1007/978-3-540-92910-9_15
+    
+    * http://cs229.stanford.edu/notes/cs229-notes3.pdf
+ 
+    * https://statinfer.com/204-6-8-svm-advantages-disadvantages-applications/
+
+
+Yararlanılan Kod Örnekleri:
+    
+    Octave/Matlab:
+        * https://github.com/benoitvallon/coursera-machine-learning/tree/master/machine-learning-ex6/ex6
+    
+    Python: 
+	* https://www.codeproject.com/Articles/1267445/An-Introduction-to-Support-Vector-Machine-SVM-and
+
+
+ 
